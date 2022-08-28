@@ -5,7 +5,7 @@ class Matriz:
         self.colunas = colunas
         self.data = []
 
-    #Funccão responsável por dar início aos primeiros valores dos pesos e dos bias.
+    #Funcão responsável por dar início aos primeiros valores dos pesos e dos bias.
     def randomize(self):
         import random
         for i in range(self.linhas):
@@ -13,6 +13,18 @@ class Matriz:
             for j in range(self.colunas):
                 linha.append(random.random())
             self.data.append(linha)
+    
+    #Função responsável por somar duas matrizes -> Elas devem ter mesma dimensão.
+    def soma(self, Matriz_A, Matriz_B):
+        soma = []
+        for i in range(len(Matriz_A)):
+            soma_linha = []
+            for j in range(len(Matriz_A[0])):
+                soma_linha.append(Matriz_A[i][j]+Matriz_B[i][j])
+            soma.append(soma_linha)
+        return soma
+
+
                 
        
 
