@@ -15,7 +15,7 @@ class Matriz:
             self.data.append(linha)
     
     #Função responsável por somar duas matrizes -> Elas devem ter mesma dimensão.
-    def soma(self, Matriz_A, Matriz_B):
+    def soma(Matriz_A, Matriz_B):
         soma = []
         for i in range(len(Matriz_A)):
             soma_linha = []
@@ -23,6 +23,20 @@ class Matriz:
                 soma_linha.append(Matriz_A[i][j]+Matriz_B[i][j])
             soma.append(soma_linha)
         return soma
+
+    #Funcao responsavel por multiplicar duas matrizes 
+    def produto(Matriz_A, Matriz_B):
+        produto = []
+        for i in range(len(Matriz_A)):
+            produto_linha = []
+            for j in range(len(Matriz_B[0])):
+                soma_produto = 0
+                for k in range(len(Matriz_A[0])):
+                    soma_produto += Matriz_A[i][k]*Matriz_B[k][j]
+                produto_linha.append(soma_produto)
+            produto.append(produto_linha)
+        return produto
+
 
 
                 
