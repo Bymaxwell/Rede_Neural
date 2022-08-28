@@ -37,6 +37,15 @@ class Matriz:
             produto.append(produto_linha)
         return produto
 
+    def subtracao(Matriz_A, Matriz_B):
+        sub = []
+        for i in range(len(Matriz_A)):
+            sub_linha = []
+            for j in range(len(Matriz_A[0])):
+                sub_linha.append(Matriz_A[i][j]-Matriz_B[i][j])
+            sub.append(sub_linha)
+        return sub
+
 
 
                 

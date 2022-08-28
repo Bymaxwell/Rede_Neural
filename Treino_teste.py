@@ -13,7 +13,15 @@ Funcoes = Matriz(1,1)
 print(Funcoes.soma(m,n))'''
 
 #Teste produto
-m = [[1,2],[3,4]]
+'''m = [[1,2],[3,4]]
 n = [[5],[6]]
 
 print(Matriz.produto(m, n))
+'''
+
+
+#Teste subtracao
+m = [[1,2],[7,8]]
+n = [[5,4],[3,6]]
+
+print(Matriz.subtracao(m, n))
