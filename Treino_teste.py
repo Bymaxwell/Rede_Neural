@@ -33,18 +33,24 @@ print(Matriz.subtracao(m, n))
 
 print(Matriz.Sigmoide(m))'''
 
-#Teste d_Sigmoide
+#Teste D_Sigmoide
 '''m = [[1,2],[-0.025,0]]
 
 sigma = Matriz.Sigmoide(m)
 print(sigma)
 print()
-print(Matriz.d_Sigmoide(m))
+print(Matriz.D_Sigmoide(m))
 '''
 
 #Teste transposta
 
-m = [[1,2],[4,5],[7,8]]
+'''m = [[1,2],[4,5],[7,8]]
 
 print(Matriz.Transposta(m))
+'''
 
+#Teste Prod_escalar
+
+m = [[1,2], [3,4], [5,6]]
+
+print(Matriz.Prod_escalar(m, 2))

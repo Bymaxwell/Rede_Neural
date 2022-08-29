@@ -59,7 +59,7 @@ class Matriz:
         return sigmoide
 
     #Função que aplica a derivada da função sigmoide aos valores de uma matriz
-    def d_Sigmoide(Matriz_A):
+    def D_Sigmoide(Matriz_A):
         import math
         d_sigmoide = []
         for i in range(len(Matriz_A)):
@@ -78,7 +78,14 @@ class Matriz:
             transposta.append(linha)
         return transposta
 
-
+    def Prod_escalar(Matriz_A, e):
+        p_escalar = []
+        for i in range(len(Matriz_A)):
+            p_linha = []
+            for j in range(len(Matriz_A[0])):
+                p_linha.append(Matriz_A[i][j]*e)
+            p_escalar.append(p_linha)
+        return p_escalar
 
 
 
