@@ -29,6 +29,16 @@ print(Matriz.subtracao(m, n))
 
 #Teste Sigmoide
 
-m = [[1,0],[0,4]]
+'''m = [[1,0],[0,4]]
 
-print(Matriz.Sigmoide(m))
+print(Matriz.Sigmoide(m))'''
+
+#Teste d_Sigmoide
+m = [[1,2],[-0.025,0]]
+
+sigma = Matriz.Sigmoide(m)
+print(sigma)
+print()
+print(Matriz.d_Sigmoide(m))
+
+

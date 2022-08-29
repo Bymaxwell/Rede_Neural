@@ -37,6 +37,7 @@ class Matriz:
             produto.append(produto_linha)
         return produto
 
+    #Função responsável por subtratir duas matrizes
     def subtracao(Matriz_A, Matriz_B):
         sub = []
         for i in range(len(Matriz_A)):
@@ -46,6 +47,7 @@ class Matriz:
             sub.append(sub_linha)
         return sub
 
+    #Função que aplica a sigmoide aos valores de uma matriz
     def Sigmoide(Matriz_A):
         import math
         sigmoide = []
@@ -56,6 +58,18 @@ class Matriz:
             sigmoide.append(sigmoide_linha)
         return sigmoide
 
+    #Função que aplica a derivada da função sigmoide aos valores de uma matriz
+    def d_Sigmoide(Matriz_A):
+        import math
+        d_sigmoide = []
+        for i in range(len(Matriz_A)):
+            d_sigmoide_linha = []
+            for j in range(len(Matriz_A[0])):
+                d_sigmoide_linha.append((math.e**(-Matriz_A[i][j]))/((1+(math.e)**(-Matriz_A[i][j]))**2))
+            d_sigmoide.append(d_sigmoide_linha)
+        return d_sigmoide            
+
+                
 
 
 
