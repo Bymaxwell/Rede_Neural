@@ -46,6 +46,18 @@ class Matriz:
             sub.append(sub_linha)
         return sub
 
+    def Sigmoide(Matriz_A):
+        import math
+        sigmoide = []
+        for i in range(len(Matriz_A)):
+            sigmoide_linha = []
+            for j in range(len(Matriz_A[0])):
+                sigmoide_linha.append(1/(1+(math.e)**(-Matriz_A[i][j])))
+            sigmoide.append(sigmoide_linha)
+        return sigmoide
+
+
+
 
 
                 

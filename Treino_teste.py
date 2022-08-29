@@ -21,7 +21,14 @@ print(Matriz.produto(m, n))
 
 
 #Teste subtracao
-m = [[1,2],[7,8]]
+'''m = [[1,2],[7,8]]
 n = [[5,4],[3,6]]
 
 print(Matriz.subtracao(m, n))
+'''
+
+#Teste Sigmoide
+
+m = [[1,0],[0,4]]
+
+print(Matriz.Sigmoide(m))
