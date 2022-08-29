@@ -58,14 +58,14 @@ class Matriz:
             sigmoide.append(sigmoide_linha)
         return sigmoide
 
-    #Função que aplica a derivada da função sigmoide aos valores de uma matriz
+    #Função que aplica a derivada da função sigmoide aos valores de uma matriz que já passou pela Sigmoide
     def D_Sigmoide(Matriz_A):
         import math
         d_sigmoide = []
         for i in range(len(Matriz_A)):
             d_sigmoide_linha = []
             for j in range(len(Matriz_A[0])):
-                d_sigmoide_linha.append((math.e**(-Matriz_A[i][j]))/((1+(math.e)**(-Matriz_A[i][j]))**2))
+                d_sigmoide_linha.append(Matriz_A[i][j]*(1-Matriz_A[i][j]))
             d_sigmoide.append(d_sigmoide_linha)
         return d_sigmoide     
 
