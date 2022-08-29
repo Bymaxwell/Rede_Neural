@@ -34,11 +34,17 @@ print(Matriz.subtracao(m, n))
 print(Matriz.Sigmoide(m))'''
 
 #Teste d_Sigmoide
-m = [[1,2],[-0.025,0]]
+'''m = [[1,2],[-0.025,0]]
 
 sigma = Matriz.Sigmoide(m)
 print(sigma)
 print()
 print(Matriz.d_Sigmoide(m))
+'''
 
+#Teste transposta
+
+m = [[1,2],[4,5],[7,8]]
+
+print(Matriz.Transposta(m))
 

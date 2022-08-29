@@ -67,7 +67,20 @@ class Matriz:
             for j in range(len(Matriz_A[0])):
                 d_sigmoide_linha.append((math.e**(-Matriz_A[i][j]))/((1+(math.e)**(-Matriz_A[i][j]))**2))
             d_sigmoide.append(d_sigmoide_linha)
-        return d_sigmoide            
+        return d_sigmoide     
+
+    def Transposta(Matriz_A):
+        transposta = []
+        for i in range(len(Matriz_A[0])):
+            linha = []
+            for j in range(len(Matriz_A)):
+                linha.append(Matriz_A[j][i])
+            transposta.append(linha)
+        return transposta
+
+
+
+
 
                 
 
