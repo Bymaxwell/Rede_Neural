@@ -5,7 +5,7 @@ class Matriz:
         self.colunas = colunas
         self.data = []
 
-    #Funcão responsável por dar início aos primeiros valores dos pesos e dos bias.
+    #Funcão responsável por dar início aos primeiros valores dos pesos e dos bias
     def randomize(self):
         import random
         for i in range(self.linhas):
@@ -14,7 +14,7 @@ class Matriz:
                 linha.append(random.random())
             self.data.append(linha)
     
-    #Função responsável por somar duas matrizes -> Elas devem ter mesma dimensão.
+    #Função responsável por somar duas matrizes -> Elas devem ter mesma dimensão
     def soma(Matriz_A, Matriz_B):
         soma = []
         for i in range(len(Matriz_A)):
@@ -69,6 +69,7 @@ class Matriz:
             d_sigmoide.append(d_sigmoide_linha)
         return d_sigmoide     
 
+    #Função que fornece a transposta de uma matriz
     def Transposta(Matriz_A):
         transposta = []
         for i in range(len(Matriz_A[0])):
@@ -78,7 +79,8 @@ class Matriz:
             transposta.append(linha)
         return transposta
 
-    def Prod_escalar(Matriz_A, e):
+    #Função que realiza o produto de uma matriz por um escalar
+    def Prod_Escalar(Matriz_A, e):
         p_escalar = []
         for i in range(len(Matriz_A)):
             p_linha = []
@@ -86,6 +88,16 @@ class Matriz:
                 p_linha.append(Matriz_A[i][j]*e)
             p_escalar.append(p_linha)
         return p_escalar
+
+    #Função que realiza o produto Hadamard entre duas matrizes -> Devem ter mesmas dimensões
+    def Prod_Hadamard(Matriz_A, Matriz_B):
+        p_hadamard = []
+        for i in range(len(Matriz_A)):
+            p_hadamard_linha = []
+            for j in range(len(Matriz_A[0])):
+                p_hadamard_linha.append(Matriz_A[i][j]*Matriz_B[i][j])
+            p_hadamard.append(p_hadamard_linha)
+        return p_hadamard
 
 
 

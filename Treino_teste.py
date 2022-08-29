@@ -49,8 +49,15 @@ print(Matriz.D_Sigmoide(m))
 print(Matriz.Transposta(m))
 '''
 
-#Teste Prod_escalar
+#Teste Prod_Escalar
 
-m = [[1,2], [3,4], [5,6]]
+'''m = [[1,2], [3,4], [5,6]]
 
-print(Matriz.Prod_escalar(m, 2))
+print(Matriz.Prod_Escalar(m, 2))'''
+
+#Teste Prod_Hadamard
+
+m = [[1,2],[3,4]]
+n = [[5,6],[7,8]]
+
+print(Matriz.Prod_Hadamard(m,n))
