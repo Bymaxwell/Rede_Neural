@@ -1,4 +1,5 @@
 from Funcoes_matrizes import Matriz
+from Rede_Neural import Rede_Neural
 
 #Teste randomzise
 '''Teste = Matriz(3,2)
@@ -57,7 +58,15 @@ print(Matriz.Prod_Escalar(m, 2))'''
 
 #Teste Prod_Hadamard
 
-m = [[1,2],[3,4]]
+'''m = [[1,2],[3,4]]
 n = [[5,6],[7,8]]
 
-print(Matriz.Prod_Hadamard(m,n))
+print(Matriz.Prod_Hadamard(m,n))'''
+
+#Teste Rede Neural
+
+Rede = Rede_Neural(3, 2, 2)
+
+entrada = [[1],[2],[3]]
+
+print(Rede.Rede(entrada))
